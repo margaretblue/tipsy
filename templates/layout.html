@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<!-- layout.html -->
+<html>
+	<head>
+		<title>Tipsy Task List</title>
+		<link rel="stylesheet" href="/static/css/bootstrap.css" type="text/css">
+	</head>
+
+	<body>
+		<form method ="get" action={{ url_for("logout")}}>
+		 <input type = "submit" value="Logout"> </input>
+		</form>
+		<div class="container">
+			{% block body %}{% endblock %}
+		</div>
+	</body>
+</html>	

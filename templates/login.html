@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block body %}
+
+<h2>Log In</h2>
+<h3>{{error}}</h3>
+<form method="POST" action="/authenticate">
+	<dl>
+		<dd>Email: <input type="string" name="email"></dd>
+		<dd>Password: <input type="password" name="password"></dd>
+		<dd><input type="submit"></dd>
+	</dl>
+</form>
+
+<div><a href="/new_user">Create New User</a></div>
+
+{% endblock %}

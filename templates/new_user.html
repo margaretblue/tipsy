@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block body %}
+<h2>Create A New User</h2>
+<form method="POST" action="/save_user">
+	<dl>
+		<dd>Email: <input type="string" name="email"></dd>
+		<dd>Password: <input type="password" name="password"></dd>
+		<dd>Username: <input type="string" name="name"></dd>
+		<dd><input type="submit"></dd>
+	</dl>
+</form>
+
+{% endblock %}
