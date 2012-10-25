@@ -1,12 +1,8 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Tipsy</title>
-        <link rel="stylesheet" href="/static/css/bootstrap.css" type="text/css">
-    </head>
-    <body>
-        <div class="container">
+{% extends "layout.html" %}
+{% block body %}
             <h1>Tipsy - A lightweight tasklist</h1>
-        </div>
-    </body>
-</html>
+
+            <div><a href="/login">Login Page </a></div>
+            <div><a href="/tasks">View All User Tasks</a></div>
+            <div><a href="/new_user">Create New User</a></div>
+{% endblock %}
